@@ -104,7 +104,10 @@ footer{
     grid-row-end: 4;
 }
 
-@media (max-width: 768px){
+
+/*********MEDIAS QUERYS 3/4********/
+
+@media (max-width: 800px){
     header{
         background-color: crimson;
     }
@@ -130,4 +133,70 @@ footer{
     footer{
         
     }
+}
+
+@media ( max-width: 525px){
+   body{
+
+       min-width: 320px;
+   }
+    .container{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns:  50% 50% ;
+        grid-template-rows: 1fr 4fr 1f;
+    }
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 10vh;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        background-color: aqua;
+    }
+    main{
+        /* height: 80vh; */
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    .main-title{
+        width: 100%;
+        height: 40vh;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        background-color: yellow;
+    }
+    
+    .main-image{
+        width: 100%;
+        height: 40vh;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        background-color: gray;
+    }
+    footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-start: 1;
+    
+    }
+    
+    footer h1 {
+        grid-column-start: 1;
+        margin: auto;
+    }
+}
+@media ( min-width: 320px){
+
 }
